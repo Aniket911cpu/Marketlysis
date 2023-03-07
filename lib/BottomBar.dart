@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:marketlysis/Pages/Analyzepage.dart';
+import 'package:marketlysis/Pages/HomePage.dart';
+import 'package:marketlysis/Pages/PositionsPage.dart';
+import 'package:marketlysis/Pages/Watchlistpage.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({Key? key}) : super(key: key);
@@ -11,11 +15,10 @@ class _BottomNavBarState extends State<BottomNavBar> {
   int currentIndex3 = 0;
 
   final example3 = [
-    const MainHomePage(),
-    const news(),
-    const calender(),
-    const portfolio(),
-    const more(),
+    const HomeP(),
+    const Analyze(),
+    const Positions(),
+    const watchlist(),
   ];
   @override
   Widget build(BuildContext context) {
@@ -43,20 +46,20 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 ),
                 //2
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.newspaper),
-                  activeIcon: Icon(Icons.newspaper_rounded),
+                  icon: Icon(Icons.analytics_outlined),
+                  activeIcon: Icon(Icons.analytics_outlined),
                   label: 'Analyze',
                 ),
                 //3
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.calendar_month),
-                  activeIcon: Icon(Icons.calendar_month_rounded),
+                  icon: Icon(Icons.cases_outlined),
+                  activeIcon: Icon(Icons.cases_outlined),
                   label: 'Positions',
                 ),
                 //4
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.work),
-                  activeIcon: Icon(Icons.work),
+                  icon: Icon(Icons.bookmark),
+                  activeIcon: Icon(Icons.bookmark),
                   label: 'Watchlist',
                 ),
               ]),
