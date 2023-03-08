@@ -40,7 +40,7 @@ class _BottomNavBarState extends State<BottomNavBar> {
               items: const [
                 //1
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
+                  icon: Icon(Icons.home_outlined),
                   activeIcon: Icon(Icons.home_filled),
                   label: 'Home',
                 ),
@@ -58,8 +58,8 @@ class _BottomNavBarState extends State<BottomNavBar> {
                 ),
                 //4
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.bookmark),
-                  activeIcon: Icon(Icons.bookmark),
+                  icon: Icon(Icons.bookmark_border_outlined),
+                  activeIcon: Icon(Icons.bookmark_border_outlined),
                   label: 'Watchlist',
                 ),
               ]),
